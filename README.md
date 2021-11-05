@@ -26,7 +26,7 @@ cp tblastndis augustusdis .conda/envs/busco406/bin/
 
 (4)To install the modified Toolset.py and BuscoTools.py to the busco lib directory:
 
-cp BuscoTools.py Toolset.py ~/ .conda/envs/busco406/lib/python3.6/site-packages/busco/
+cp BuscoTools.py Toolset.py BuscoLogger.py ~/ .conda/envs/busco406/lib/python3.6/site-packages/busco/
 
 (5) Preparing a hostfile named buscohosts.txt, to specify the hostname for program to run. example:
 
