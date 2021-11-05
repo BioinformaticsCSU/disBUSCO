@@ -1362,11 +1362,11 @@ class AugustusRunner:
                 out_filename = os.path.join(self.pred_genes_dir, "{}.out.{}".format(busco_group, output_index))
                 self._configure_augustus_job(busco_group, contig_tmp_file, contig_start, contig_end, out_filename)
                 njobs += 1
-                if njobs >= nprocs*10:
-                    print("generate augustus job:",nprocs*10)
-                    self.augustus_tool.run_jobs(self.cpus)
-                    yield True
-                    njobs = 0
+                #if njobs >= nprocs*10:
+                #    print("generate augustus job:",nprocs*10)
+                #    self.augustus_tool.run_jobs(self.cpus)
+                #    yield True
+                #    njobs = 0
         if njobs > 0:
             self.augustus_tool.run_jobs(self.cpus)
         yield False
